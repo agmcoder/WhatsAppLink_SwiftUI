@@ -14,6 +14,9 @@
 		9E50E71C29092CCA0077C30F /* WhatsAppLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E71B29092CCA0077C30F /* WhatsAppLinkTests.swift */; };
 		9E50E72629092CCA0077C30F /* WhatsAppLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E72529092CCA0077C30F /* WhatsAppLinkUITests.swift */; };
 		9E50E72829092CCA0077C30F /* WhatsAppLinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E72729092CCA0077C30F /* WhatsAppLinkUITestsLaunchTests.swift */; };
+		9E50E737290957D70077C30F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E736290957D70077C30F /* MainView.swift */; };
+		9E50E73B29099C370077C30F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E73A29099C370077C30F /* Color.swift */; };
+		9E50E73D290C50ED0077C30F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E73C290C50ED0077C30F /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		9E50E72129092CCA0077C30F /* WhatsAppLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsAppLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E50E72529092CCA0077C30F /* WhatsAppLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppLinkUITests.swift; sourceTree = "<group>"; };
 		9E50E72729092CCA0077C30F /* WhatsAppLinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppLinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E50E736290957D70077C30F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9E50E73A29099C370077C30F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9E50E73C290C50ED0077C30F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		9E50E70929092CC70077C30F /* WhatsAppLink */ = {
 			isa = PBXGroup;
 			children = (
+				9E50E73829099C1D0077C30F /* Utils */,
+				9E50E73429093DBE0077C30F /* Views */,
 				9E50E70A29092CC70077C30F /* WhatsAppLinkApp.swift */,
 				9E50E70C29092CC70077C30F /* ContentView.swift */,
 				9E50E70E29092CC90077C30F /* Assets.xcassets */,
@@ -125,6 +133,39 @@
 				9E50E72729092CCA0077C30F /* WhatsAppLinkUITestsLaunchTests.swift */,
 			);
 			path = WhatsAppLinkUITests;
+			sourceTree = "<group>";
+		};
+		9E50E73429093DBE0077C30F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E735290957AF0077C30F /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E50E735290957AF0077C30F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E736290957D70077C30F /* MainView.swift */,
+				9E50E73C290C50ED0077C30F /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9E50E73829099C1D0077C30F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E73929099C250077C30F /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9E50E73929099C250077C30F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E73A29099C370077C30F /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E50E73D290C50ED0077C30F /* MainViewModel.swift in Sources */,
 				9E50E70D29092CC70077C30F /* ContentView.swift in Sources */,
+				9E50E73B29099C370077C30F /* Color.swift in Sources */,
+				9E50E737290957D70077C30F /* MainView.swift in Sources */,
 				9E50E70B29092CC70077C30F /* WhatsAppLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
