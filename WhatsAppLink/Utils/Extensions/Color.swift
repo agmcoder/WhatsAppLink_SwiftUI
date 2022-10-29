@@ -15,6 +15,7 @@ extension Color{
 struct ThemeColor{
     let fontColor = Color("FontColors")
     let accent = Color("AccentColor")
+    let codeCountry = Color("CodeCountryColor")
 }
 
 

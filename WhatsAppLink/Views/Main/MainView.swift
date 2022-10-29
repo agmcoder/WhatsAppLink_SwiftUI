@@ -8,68 +8,82 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject  var  mainVM = MainViewModel()
+    @ObservedObject var mainVM : MainViewModel
     var body: some View {
-        VStack{
-            // main screen with txtfield and button in the middle
-            VStack(alignment: .center){
+        VStack {
+            // main screen with textfield and button in the middle
+            VStack(alignment: .center) {
                 Text("WhatsAppLink")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.theme.accent)
-                    .padding(.bottom, 20)
-                //outlined textfield type number
-                HStack{
-                    //buttom showing the country code
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.theme.accent)
+                        .padding(.bottom, 20)
+
+                HStack (spacing: 10){
+                    //button showing the country code
                     Button(action: {
                         //action
                     }, label: {
                         Text("+34")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.theme.accent)
-                            .padding(.horizontal, 10)
-                            //.padding(.vertical, 5)
-                            //.background(Color.theme.accent)
-                            .cornerRadius(5)
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.theme.accent)
+                                .cornerRadius(5)
+                                .padding(5)
                     })
+                            .background(Color.theme.codeCountry)
+                            .clipShape(Capsule())
 
-                    
+
                     TextField("Enter phone number", text: $mainVM.textNumber)
-                        .keyboardType(.numberPad)
-                        .padding()
-                    //.background(Color.theme.fontColor)
-                        .cornerRadius(5.0)
-                        //.padding(.bottom, 20)
-                    
-                    
+                            .textFieldStyle(.roundedBorder)
+                            .keyboardType(.numberPad)
+                            .padding()
+                            //.background(Color.theme.fontColor)
+                            .cornerRadius(5.0)
+
                 }
-
-
+                        .padding(.horizontal, 20)
+                //button to open WhatsApp
                 Button(action: {
-                    // open whatsapp
+                    // open WhatsApp
+                    mainVM.openWhatsApp()
+
                 }, label: {
                     Text("Open WhatsApp")
-                        .foregroundColor(.theme.accent)
-                        .padding(.vertical)
-                        .frame(width: UIScreen.main.bounds.width * 0.8)
+                            .foregroundColor(.theme.accent)
+                            .padding(.vertical)
+                            .frame(width: UIScreen.main.bounds.width * 0.8)
                 })
-                .cornerRadius(8)
+                        .cornerRadius(8)
             }
+            Button(action:{}, label: {})
+                    .alert(isPresented: $mainVM.isNeededToInstallWhatsApp,
+                            content: {
+                                Alert(
+                                        title: Text("WhatsApp not installed"),
+                                        message: Text("Please install WhatsApp to use this app"),
+                                        dismissButton: .default(Text("Continue"),
+                                                action: {
+                                                    mainVM.openAppStore()
+                                                }
+                                        )
+                                )
+                            }
+                    )
         }
     }
 }
 
-
-//preview in darkmode
 struct MainView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        MainView()
-            .preferredColorScheme(.dark)
+        MainView(mainVM:   MainViewModel())
+                .preferredColorScheme(.dark)
     }
 }
+
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(mainVM: MainViewModel())
     }
 }

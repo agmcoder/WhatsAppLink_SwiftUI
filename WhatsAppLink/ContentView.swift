@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    var mainVM = MainViewModel()
     var body: some View {
-        MainView()
+        MainView(mainVM: mainVM)
+
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
