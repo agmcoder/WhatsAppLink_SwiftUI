@@ -11,18 +11,17 @@ import UIKit
 class MainViewModel: ObservableObject{
     private let CHARACTER_LIMIT = 10
     @Published var textNumber = ""{
-        didSet {
-            if textNumber.count > CHARACTER_LIMIT{
+        willSet {
+            if textNumber.count >= CHARACTER_LIMIT{
                 textNumber = String(textNumber.prefix(CHARACTER_LIMIT))
             }
         }
     }
-    @Published var isNeededToInstallWhatsApp = true
+    @Published var isNeededToInstallWhatsApp = false
     @Published var isShowingAlert = false
     @Published var alertTitle = ""
     @Published var alertMessage = ""
     @Published var alertButtonTitle = ""
-    @Published var isShowingSheet = false
 
     private let WHATSAPP_DOWNLOAD_URL = "https://apps.apple.com/us/app/whatsapp-messenger/id310633997"
 
@@ -32,32 +31,24 @@ class MainViewModel: ObservableObject{
     }
 
     func checkIfWhatsAppIsInstalled(){
-        let app = UIApplication.shared
-        let appScheme = "WhatsApp//app"
-        if app.canOpenURL(URL(string: appScheme)!) {
-            print("App is install and can be opened")
-            isNeededToInstallWhatsApp = false
-
-        }
-        else {
-            print("App in not installed. Go to AppStore")
-            isNeededToInstallWhatsApp = true
-
-        }
+        
     }
 
     func openWhatsApp(){
         if !isNeededToInstallWhatsApp{
-            if let url = URL(string: "whatsapp://send?text=\(textNumber)") {
-                if UIApplication.shared.canOpenURL(url) {
-                    UIApplication.shared.open(url)
+            let appURL = URL(string: "https://api.whatsapp.com/send?phone=34\(textNumber)")!
+            if UIApplication.shared.canOpenURL(appURL) {
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+                }
+                else {
+                    UIApplication.shared.openURL(appURL)
                 }
             }
         }else{
             alertTitle = "WhatsApp not installed"
             alertMessage = "Please install WhatsApp to use this app"
             alertButtonTitle = "OK"
-            isShowingAlert = true
         }
     }
 
@@ -67,5 +58,8 @@ class MainViewModel: ObservableObject{
                 UIApplication.shared.open(url)
             }
         }
+    }
+    func showCustomAlert(){
+
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var mainVM : MainViewModel
+    @ObservedObject var mainVM: MainViewModel
     var body: some View {
         VStack {
             // main screen with textfield and button in the middle
@@ -19,7 +19,7 @@ struct MainView: View {
                         .foregroundColor(.theme.accent)
                         .padding(.bottom, 20)
 
-                HStack (spacing: 10){
+                HStack(spacing: 10) {
                     //button showing the country code
                     Button(action: {
                         //action
@@ -34,7 +34,7 @@ struct MainView: View {
                             .background(Color.theme.codeCountry)
                             .clipShape(Capsule())
 
-
+                    // textfield to introduce phone number
                     TextField("Enter phone number", text: $mainVM.textNumber)
                             .textFieldStyle(.roundedBorder)
                             .keyboardType(.numberPad)
@@ -45,40 +45,25 @@ struct MainView: View {
                 }
                         .padding(.horizontal, 20)
                 //button to open WhatsApp
-                Button(action: {
-                    // open WhatsApp
-                    mainVM.openWhatsApp()
-
-                }, label: {
-                    Text("Open WhatsApp")
-                            .foregroundColor(.theme.accent)
-                            .padding(.vertical)
-                            .frame(width: UIScreen.main.bounds.width * 0.8)
-                })
+                Button(
+                        action: {
+                            mainVM.checkIfWhatsAppIsInstalled()
+                            print(mainVM.isNeededToInstallWhatsApp)
+                            mainVM.isNeededToInstallWhatsApp ? mainVM.showCustomAlert() : mainVM.openWhatsApp()
+                        },
+                        label: {
+                            Text("Open WhatsApp")
+                                    .foregroundColor(.theme.accent)
+                                    .padding(.vertical)
+                                    .frame(width: UIScreen.main.bounds.width * 0.8)
+                        }
+                        //disable button if textfield is empty or if textfield has less than 9 characters
+                )
+                        .disabled(mainVM.textNumber.isEmpty || mainVM.textNumber.count < 9)
+                        .buttonStyle(.bordered)
                         .cornerRadius(8)
             }
-            Button(action:{}, label: {})
-                    .alert(isPresented: $mainVM.isNeededToInstallWhatsApp,
-                            content: {
-                                Alert(
-                                        title: Text("WhatsApp not installed"),
-                                        message: Text("Please install WhatsApp to use this app"),
-                                        dismissButton: .default(Text("Continue"),
-                                                action: {
-                                                    mainVM.openAppStore()
-                                                }
-                                        )
-                                )
-                            }
-                    )
         }
-    }
-}
-
-struct MainView_Previews_dark: PreviewProvider {
-    static var previews: some View {
-        MainView(mainVM:   MainViewModel())
-                .preferredColorScheme(.dark)
     }
 }
 
