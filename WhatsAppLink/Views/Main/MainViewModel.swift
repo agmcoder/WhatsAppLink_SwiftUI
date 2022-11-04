@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 //mainviewModel
 class MainViewModel: ObservableObject{
+    private let defaultCountry = Country(name: "Spain", dialCode: "+34", code: "ES")
+    private let WHATSAPP_DOWNLOAD_URL = "https://apps.apple.com/us/app/whatsapp-messenger/id310633997"
+    static private let countriesApi = CountriesAPI()
     private let CHARACTER_LIMIT = 10
     @Published var textNumber = ""{
         willSet {
@@ -17,17 +20,29 @@ class MainViewModel: ObservableObject{
             }
         }
     }
+    
     @Published var isNeededToInstallWhatsApp = false
     @Published var isShowingAlert = false
     @Published var alertTitle = ""
     @Published var alertMessage = ""
     @Published var alertButtonTitle = ""
+    @Published var countries = [Country]()
+    @Published var selectedCountry:Country
+    @Published var showSelectCountry = false
 
-    private let WHATSAPP_DOWNLOAD_URL = "https://apps.apple.com/us/app/whatsapp-messenger/id310633997"
 
 
-    init() {
+    init(){
+        selectedCountry = defaultCountry
         checkIfWhatsAppIsInstalled()
+        Task{
+            do{
+                try await getCountries()
+            }catch{
+                print("Error while fetching countries", error)
+            }
+        }
+        
     }
 
     func checkIfWhatsAppIsInstalled(){
@@ -36,7 +51,7 @@ class MainViewModel: ObservableObject{
 
     func openWhatsApp(){
         if !isNeededToInstallWhatsApp{
-            let appURL = URL(string: "https://api.whatsapp.com/send?phone=34\(textNumber)")!
+            let appURL = URL(string: "https://api.whatsapp.com/send?phone=\(selectedCountry.dialCode)\(textNumber)")!
             if UIApplication.shared.canOpenURL(appURL) {
                 if #available(iOS 10.0, *) {
                     UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
@@ -61,5 +76,10 @@ class MainViewModel: ObservableObject{
     }
     func showCustomAlert(){
 
+    }
+    //function to get countries from API
+    func getCountries() async throws{
+
+        countries = try await MainViewModel.countriesApi.fetchCountries() ?? []
     }
 }

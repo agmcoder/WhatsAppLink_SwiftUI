@@ -22,9 +22,9 @@ struct MainView: View {
                 HStack(spacing: 10) {
                     //button showing the country code
                     Button(action: {
-                        //action
+                        mainVM.showSelectCountry = true
                     }, label: {
-                        Text("+34")
+                        Text(mainVM.selectedCountry.dialCode)
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .foregroundColor(.theme.accent)
@@ -33,6 +33,11 @@ struct MainView: View {
                     })
                             .background(Color.theme.codeCountry)
                             .clipShape(Capsule())
+                            .sheet(
+                                    isPresented: $mainVM.showSelectCountry,
+                                    onDismiss: { mainVM.showSelectCountry = false },
+                                    content: { SelectCountryView(mainViewModel: mainVM).interactiveDismissDisabled() }
+                            )
 
                     // textfield to introduce phone number
                     TextField("Enter phone number", text: $mainVM.textNumber)

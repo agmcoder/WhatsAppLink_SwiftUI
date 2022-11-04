@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "497E609D-FB81-4295-B46A-0B01A4487BB6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E599BAB6-76AC-451A-BD3B-3BE46084D1CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/Views/Main/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E599BAB6-76AC-451A-BD3B-3BE46084D1CD - 646b9325686d50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WhatsAppLink.MainViewModel.getCountries() async throws -&gt; ()"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/Views/Main/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  uuid = "E599BAB6-76AC-451A-BD3B-3BE46084D1CD - 41f29faa5df7139d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for WhatsAppLink.MainViewModel.getCountries() async throws -&gt; ()"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/Views/Main/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "E599BAB6-76AC-451A-BD3B-3BE46084D1CD - f74da93a29c5e97e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WhatsAppLink.MainViewModel.getCountries() async throws -&gt; ()"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/Views/Main/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "E599BAB6-76AC-451A-BD3B-3BE46084D1CD - cd94809af8c976d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for WhatsAppLink.MainViewModel.getCountries() async throws -&gt; ()"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/Views/Main/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9028C85-5CE9-439B-8AA1-AB4B62A2525E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9587A92C-7E00-489E-909D-11B42F7A6FC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48D60091-9841-4F9A-93EF-013A94E4034A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "742E0250-E62D-4D0B-B121-3AE21054F8C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC61587C-3FA4-4A95-9597-1736DD85AE6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC61587C-3FA4-4A95-9597-1736DD85AE6B - efa7498ce5d375f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "DC61587C-3FA4-4A95-9597-1736DD85AE6B - 4a18eb80025bb197"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "DC61587C-3FA4-4A95-9597-1736DD85AE6B - 8524e87dfb9db1f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "99">
+               </Location>
+               <Location
+                  uuid = "DC61587C-3FA4-4A95-9597-1736DD85AE6B - 8fe55ba54cb94ff1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5D29D31-A3F2-40C4-B3E4-3DAA249C7384"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D5D29D31-A3F2-40C4-B3E4-3DAA249C7384 - efa7498ce5d375f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "D5D29D31-A3F2-40C4-B3E4-3DAA249C7384 - 4a18eb80025bb197"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "D5D29D31-A3F2-40C4-B3E4-3DAA249C7384 - 8524e87dfb9db1f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "99">
+               </Location>
+               <Location
+                  uuid = "D5D29D31-A3F2-40C4-B3E4-3DAA249C7384 - 8fe55ba54cb94ff1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16FF3567-E920-4A03-B202-FC757678CB9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16FF3567-E920-4A03-B202-FC757678CB9F - efa7498ce5d37530"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "16FF3567-E920-4A03-B202-FC757678CB9F - efa7498ce5d37530"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "237">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD42F172-55BD-44D3-BC3F-1E80591809C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B210F2B-0D53-4A2D-8B03-72094DAE4113"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68C20C7D-021B-44D8-A282-CD5EC15E3653"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95BD34CA-79DE-4C89-A5BC-C5010B901EC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95BD34CA-79DE-4C89-A5BC-C5010B901EC6 - 8524e87dfb9db0aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  uuid = "95BD34CA-79DE-4C89-A5BC-C5010B901EC6 - 8fe55ba54cb94eab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  uuid = "95BD34CA-79DE-4C89-A5BC-C5010B901EC6 - 8fe55ba54cb94eab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for WhatsAppLink.CountriesAPI.fetchCountries() async throws -&gt; Swift.Optional&lt;Swift.Array&lt;WhatsAppLink.Country&gt;&gt;"
+                  moduleName = "WhatsAppLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/agmcoder/Documents/Xcode/WhatsAppLink/WhatsAppLink/API/CountriesAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "323">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7E62D49-E2B7-4235-B26A-B0241698D105"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/Views/Main/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "892BC961-424D-4F1F-8952-FC2885747992"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhatsAppLink/API/CountriesAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchCountries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

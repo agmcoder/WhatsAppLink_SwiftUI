@@ -1,7 +1,0 @@
-{
-  "name" : "Spain",
-  "code" : "ES",
-  "phoneCode" : "34",
-  "phoneLength" : 9,
-  "phonePattern" : "^(\\d{9})$"
-}

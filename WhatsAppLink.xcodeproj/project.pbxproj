@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		649B2A2DCFC5F100D3A4FAEF /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 649B23B3419C8471D3EDE128 /* countries.json */; };
 		9E50E70B29092CC70077C30F /* WhatsAppLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E70A29092CC70077C30F /* WhatsAppLinkApp.swift */; };
 		9E50E70D29092CC70077C30F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E70C29092CC70077C30F /* ContentView.swift */; };
 		9E50E70F29092CC90077C30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E50E70E29092CC90077C30F /* Assets.xcassets */; };
@@ -19,6 +18,8 @@
 		9E50E73B29099C370077C30F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E73A29099C370077C30F /* Color.swift */; };
 		9E50E73D290C50ED0077C30F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E73C290C50ED0077C30F /* MainViewModel.swift */; };
 		9E50E740290F21E10077C30F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E73F290F21E10077C30F /* Country.swift */; };
+		9E50E7472913C72B0077C30F /* CountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E7462913C72B0077C30F /* CountriesAPI.swift */; };
+		9E50E74A29150EAB0077C30F /* SelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E74929150EAB0077C30F /* SelectCountryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		649B23B3419C8471D3EDE128 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		9E50E70729092CC70077C30F /* WhatsAppLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E50E70A29092CC70077C30F /* WhatsAppLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppLinkApp.swift; sourceTree = "<group>"; };
 		9E50E70C29092CC70077C30F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		9E50E73A29099C370077C30F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9E50E73C290C50ED0077C30F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9E50E73F290F21E10077C30F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		9E50E7462913C72B0077C30F /* CountriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPI.swift; sourceTree = "<group>"; };
+		9E50E74929150EAB0077C30F /* SelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		649B2A118DEF595E4519FD8E /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				649B23B3419C8471D3EDE128 /* countries.json */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		9E50E6FE29092CC70077C30F = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +106,7 @@
 		9E50E70929092CC70077C30F /* WhatsAppLink */ = {
 			isa = PBXGroup;
 			children = (
+				9E50E7452913C70B0077C30F /* API */,
 				9E50E73E290F219A0077C30F /* Model */,
 				9E50E73829099C1D0077C30F /* Utils */,
 				9E50E73429093DBE0077C30F /* Views */,
@@ -119,7 +114,6 @@
 				9E50E70C29092CC70077C30F /* ContentView.swift */,
 				9E50E70E29092CC90077C30F /* Assets.xcassets */,
 				9E50E71029092CC90077C30F /* Preview Content */,
-				649B2A118DEF595E4519FD8E /* Data */,
 			);
 			path = WhatsAppLink;
 			sourceTree = "<group>";
@@ -152,6 +146,7 @@
 		9E50E73429093DBE0077C30F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9E50E74829150E960077C30F /* SelectCountry */,
 				9E50E735290957AF0077C30F /* Main */,
 			);
 			path = Views;
@@ -188,6 +183,22 @@
 				9E50E73F290F21E10077C30F /* Country.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9E50E7452913C70B0077C30F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E7462913C72B0077C30F /* CountriesAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9E50E74829150E960077C30F /* SelectCountry */ = {
+			isa = PBXGroup;
+			children = (
+				9E50E74929150EAB0077C30F /* SelectCountryView.swift */,
+			);
+			path = SelectCountry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +307,6 @@
 			files = (
 				9E50E71229092CC90077C30F /* Preview Assets.xcassets in Resources */,
 				9E50E70F29092CC90077C30F /* Assets.xcassets in Resources */,
-				649B2A2DCFC5F100D3A4FAEF /* countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E50E73D290C50ED0077C30F /* MainViewModel.swift in Sources */,
+				9E50E74A29150EAB0077C30F /* SelectCountryView.swift in Sources */,
 				9E50E70D29092CC70077C30F /* ContentView.swift in Sources */,
 				9E50E73B29099C370077C30F /* Color.swift in Sources */,
 				9E50E737290957D70077C30F /* MainView.swift in Sources */,
 				9E50E740290F21E10077C30F /* Country.swift in Sources */,
+				9E50E7472913C72B0077C30F /* CountriesAPI.swift in Sources */,
 				9E50E70B29092CC70077C30F /* WhatsAppLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

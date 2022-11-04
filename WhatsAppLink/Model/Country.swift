@@ -6,13 +6,17 @@
 //
 
 import Foundation
-//country phone model
-struct Country: Identifiable{
-    var id = UUID()
-    var name: String
-    var code: String
-    var phoneCode: String
-    var phoneLength: Int
-    var phonePattern: String
+struct Country: Codable , Identifiable{
+    let id = UUID()
+    let name, dialCode, code: String
 
+    enum CodingKeys: String, CodingKey {
+        case name
+        case dialCode = "dial_code"
+        case code
+    }
+}
+
+public enum CountryUrl: String{
+    case countriesJSON = "https://gist.githubusercontent.com/anubhavshrimal/75f6183458db8c453306f93521e93d37/raw/f77e7598a8503f1f70528ae1cbf9f66755698a16/CountryCodes.json"
 }
